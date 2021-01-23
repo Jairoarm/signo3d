@@ -29,11 +29,7 @@
                 <img src="assets/logo_signo3d.jpg" alt="logo de la empresa signo3d sas" title="logo de la empresa signo3d sas">
             </div>
 
-            <nav class="navbar">
-                <a class="navbar_a" href="01_portafolio.html" target="_self">Portafolio</a>
-                <a class="navbar_a" href="02_nosotros.html" target="_self">Nosotros</a>
-                <a class="navbar_a" href="03_contacto.html" target="_self">Contacto</a>
-            </nav>
+            <?php require_once('templates/nav.php'); ?>
         </header>
 
         <main>
