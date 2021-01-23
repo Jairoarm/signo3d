@@ -29,7 +29,7 @@
                 <img src="assets/logo_signo3d.jpg" alt="logo de la empresa signo3d sas" title="logo de la empresa signo3d sas">
             </div>
 
-            <?php require_once('templates/nav.php'); ?>
+            <?php // require_once('templates/nav.php'); ?>
         </header>
 
         <main>
