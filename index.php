@@ -1,3 +1,10 @@
+<?php
+    require_once('components/data-fetch.php');
+
+    $portfolio = new Portfolio();
+    $renders_info = $portfolio->get_renders_info();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,7 +23,10 @@
         </div> -->
 
         <header class="navbar_menu">
-            <div><img src="logo_signo3d.jpg" alt="logo de la empresa signo3d sas" title="logo de la empresa signo3d sas" width="120">
+            <div>
+                <img src="assets/logo_signo3d.jpg" alt="logo de la empresa signo3d sas" title="logo de la empresa signo3d sas" width="120">
+            </div>
+
             <nav class="navbar">
                 <a class="navbar_a" href="01_portafolio.html" target="_self">Portafolio</a>
                 <a class="navbar_a" href="02_nosotros.html" target="_self">Nosotros</a>
@@ -25,15 +35,7 @@
         </header>
 
         <section class="portfolio">
-            <a class="projects_a_space projects_img_frame" href="a_01_alegro_cali.html" target="_self">
-                <img class="projects_img" src="assets/01_allegro_cali/2_perspectiva_noc.jpg" alt="fachadaal" title="fachada alegro cali">
-            </a>
-            <a class="projects_a_space projects_img_frame" href="b_01_parquereservado.html" target="_self">
-                <img class="projects_img" src="assets/02_parquereservado/4-fachada.jpg" alt="fachadapr" title="fachada parque reservado">
-            </a>
-            <a class="projects_a_space projects_img_frame" href="c_01_satori.html" target="_self">
-                <img class="projects_img" src="assets/03_satori_vdl/2_fachada_ppal.JPG" alt="fachada s" title="fachada satori">
-            </a>
+            <?php require_once('templates/portfolio.php'); ?>
         </section>
     </body>
 </html>
