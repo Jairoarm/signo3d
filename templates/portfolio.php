@@ -3,7 +3,7 @@
         <li>
             <a class="projects_a_space projects_img_frame" href="a_01_alegro_cali.html" target="_self">
                 <img class="projects_img"
-                    src="<?php echo $portfolio->get_image_url($renders_info[$ri]->{'img-root-folder'}, $renders_info[$ri]->{'img'}); ?>"
+                    src="<?php echo $portfolio->get_image_url($renders_info[$ri]->{'img'}); ?>"
                     alt="fachadaal"
                     title="fachada alegro cali"
                 >

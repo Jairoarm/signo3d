@@ -10,8 +10,8 @@
             $data = [];
         }
 
-        public function get_image_url($root, $img) {
-            return 'img/' . $root . '/' . $img->{'cover'} . '.jpg';
+        public function get_image_url($img) {
+            return 'img/' . $img->{'img-root-folder'} . '/' . $img->{'cover'};
         }
 
         public function get_renders_info() {
