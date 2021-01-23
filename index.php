@@ -10,7 +10,9 @@
     <head>
         <meta charset="utf-8">
         <title>signo3d</title>
+        <meta name="viewport" content="width=device-width , initial-scale=1 , user-scalable=no"/>
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/portfolio.css">
     </head>
 
     <body>
@@ -23,8 +25,8 @@
         </div> -->
 
         <header class="navbar_menu">
-            <div>
-                <img src="assets/logo_signo3d.jpg" alt="logo de la empresa signo3d sas" title="logo de la empresa signo3d sas" width="120">
+            <div class="logo-wrapper">
+                <img src="assets/logo_signo3d.jpg" alt="logo de la empresa signo3d sas" title="logo de la empresa signo3d sas">
             </div>
 
             <nav class="navbar">
@@ -34,8 +36,10 @@
             </nav>
         </header>
 
-        <section class="portfolio">
-            <?php require_once('templates/portfolio.php'); ?>
-        </section>
+        <main>
+            <section class="portfolio">
+                <?php require_once('templates/portfolio.php'); ?>
+            </section>
+        </main>
     </body>
 </html>

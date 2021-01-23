@@ -1,0 +1,23 @@
+.renders-porfolio-wrapper {
+
+}
+
+.renders-portfolio-image-wrapper {
+    padding: 10px 0;
+}
+
+.renders-portfolio-image-wrapper img {
+    width: 100%;
+}
+
+@media all and (min-width: 650px) {
+    .renders-portfolio-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .renders-portfolio-image-wrapper {
+        width: 25%;
+        padding: 14px;
+    }
+}

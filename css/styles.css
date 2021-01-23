@@ -9,11 +9,19 @@
 body {
   font-family: 'Quicksand',Arial, Helvetica, sans-serif;
   color: #808080;
-  font-size: 18px;
+  font-size: 14px;
   margin: 0 5% 5% 5%;
 }
 
 ul {
     list-style: none;
+}
+
+.logo-wrapper {
+    width: 100px;
+}
+
+.logo-wrapper img {
+    width: 100%;
 }
 
