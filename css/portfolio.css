@@ -10,6 +10,10 @@
     width: 100%;
 }
 
+.renders-portfolio-image-wrapper:hover {
+    opacity: .7
+}
+
 @media all and (min-width: 650px) {
     .renders-portfolio-wrapper {
         display: flex;
