@@ -35,11 +35,7 @@
             </div>
 
 
-            <?php
-                if (!$is_index) {
-                    require_once('templates/nav.php');
-                }
-            ?>
+            <?php require_once('templates/nav.php'); ?>
         </header>
 
         <main>
