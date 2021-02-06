@@ -16,7 +16,9 @@
         }
     }
 
-    if (!$project_name || !$project_info) {
+    $is_index = !$project_name || !$project_info;
+
+    if ($is_index) {
         $portfolio = new Portfolio($renders_data);
         $renders_info = $portfolio->get_renders_info();
     }

@@ -34,7 +34,12 @@
                 <img src="assets/logo_signo3d.jpg" alt="logo de la empresa signo3d sas" title="logo de la empresa signo3d sas">
             </div>
 
-            <?php // require_once('templates/nav.php'); ?>
+
+            <?php
+                if (!$is_index) {
+                    require_once('templates/nav.php');
+                }
+            ?>
         </header>
 
         <main>
@@ -42,5 +47,7 @@
                 <?php require_once('templates/' . $template); ?>
             </section>
         </main>
+
+        <?php require_once('templates/footer.php'); ?>
     </body>
 </html>

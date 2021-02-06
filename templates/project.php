@@ -3,7 +3,7 @@
         <h1 class="project-name"><?php echo $project_info->name; ?></h1>
 
         <ul class="project-info">
-            <li>Autor: <?php echo $project_info->author; ?></li>
+            <li>Renderista: <?php echo $project_info->author; ?></li>
             <li>Diseño: <?php echo $project_info->design; ?></li>
             <li>Ubicación: <?php echo $project_info->localization; ?></li>
             <li>Tipo: <?php echo $project_info->type; ?></li>
