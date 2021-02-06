@@ -16,7 +16,9 @@
             $project = null;
 
             for ($i = 0; $i < count($data); $i++) {
-                $pr_name = str_replace(' ', '-', trim($data[$i]->name));
+                $pr_name = Utils::replace_special_characters(
+                    str_replace(' ', '-', trim($data[$i]->name))
+                );
 
                 if ($pr_name == $name) {
                     $project = $data[$i];

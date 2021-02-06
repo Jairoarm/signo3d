@@ -1,4 +1,6 @@
 <?php
+    require_once('utils/utils.php');
+
     require_once('api/renders-data-api.php');
 
     require_once('components/portfolio.php');
@@ -15,6 +17,7 @@
         <meta name="viewport" content="width=device-width , initial-scale=1 , user-scalable=no"/>
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/portfolio.css">
+        <link rel="stylesheet" href="css/project.css">
     </head>
 
     <body>

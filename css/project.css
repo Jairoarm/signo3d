@@ -1,0 +1,28 @@
+.project-text-info-wrapper {
+    padding: 40px 0;
+}
+
+.project-info li {
+    padding: 5px 0;
+}
+
+.project-image-wrapper {
+    padding: 20px 0;
+    width: 100%;
+}
+
+.project-image-wrapper img {
+    width: 100%;
+}
+
+@media all and (min-width: 650px) {
+    .project-image-wrapper {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 1500px) {
+    .project-image-wrapper {
+        width: 80%;
+    }
+}
