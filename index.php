@@ -1,8 +1,10 @@
 <?php
-    require_once('components/data-fetch.php');
+    require_once('api/renders-data-api.php');
 
-    $portfolio = new Portfolio();
-    $renders_info = $portfolio->get_renders_info();
+    require_once('components/portfolio.php');
+    require_once('components/project.php');
+
+    require_once('components/data-template-parser.php');
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +36,7 @@
 
         <main>
             <section class="portfolio">
-                <?php require_once('templates/portfolio.php'); ?>
+                <?php require_once('templates/' . $template); ?>
             </section>
         </main>
     </body>
