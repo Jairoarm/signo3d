@@ -9,7 +9,7 @@
                 <img class="profolio-render-image"
                     src="<?php echo $portfolio->get_image_url($renders_info[$ri]->{'img'}); ?>"
                     alt="fachadaal"
-                    title="fachada alegro cali"
+                    title="<?php echo trim($renders_info[$ri]->name); ?>"
                 >
             </a>
         </li>
