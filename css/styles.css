@@ -52,6 +52,17 @@ footer {
     padding: 40px 0;
 }
 
+button {
+    background: none;
+    border: 1px solid #999;
+    cursor: pointer;
+    padding: 15px;
+}
+
+button:hover {
+    background-color: #eee;
+}
+
 .logo-wrapper {
     width: 100px;
 }

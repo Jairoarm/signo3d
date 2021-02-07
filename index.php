@@ -46,4 +46,6 @@
 
         <?php require_once('templates/footer.php'); ?>
     </body>
+
+    <script src="js/project.js"></script>
 </html>

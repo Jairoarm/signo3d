@@ -30,5 +30,7 @@
             </li>
         </ul>
     <?php endfor; ?>
+
+    <button id="back-to-top-bta">Volver a arriba</button>
 </div>
 
