@@ -3,7 +3,7 @@
         <h1 class="project-name"><?php echo $project_info->name; ?></h1>
 
         <ul class="project-info">
-            <li>Renderista: <?php echo $project_info->author; ?></li>
+            <li>Render: <?php echo $project_info->author; ?></li>
 
             <?php if (isset($project_info->design)): ?>
                 <li>Diseño: <?php echo $project_info->design; ?></li>
