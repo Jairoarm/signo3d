@@ -23,24 +23,33 @@ header {
     padding: 60px 0;
 }
 
+nav {
+    padding-top: 20px;
+}
+
 nav * {
+    color: #999;
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-nav:hover {
-    opacity: 0.7;
+nav .nav-link {
+    padding: 0 15px;
+}
+
+nav .nav-link:first-child {
+    padding: 0;
+}
+
+nav .nav-link:hover {
+    color: black;
 }
 
 footer {
     border-top: 1px solid #eee;
     margin-top: 40px;
     padding: 40px 0;
-}
-
-.nav_link {
-    padding: 0 15px;
 }
 
 .logo-wrapper {
@@ -63,6 +72,10 @@ footer {
 
     nav {
         margin-left: auto;
+    }
+
+    nav .nav-link {
+        padding: 0 15px;
     }
 
 }
