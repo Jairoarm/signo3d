@@ -73,11 +73,15 @@ button:hover {
 }
 
 .page-text-wrapper {
-    padding: 20px 0;
+    padding: 15px 0 20px;
 }
 
 .page-info h2 {
     padding-bottom: 10px;
+}
+
+.page-text-wrapper h2 {
+    padding-bottom: 18px;
 }
 
 .page-title {

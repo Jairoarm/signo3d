@@ -5,21 +5,34 @@
 
     <?php if (!empty($page_config_data->description)): ?>
         <?php foreach ($page_config_data->description as $d): ?>
+
             <div class="page-text-wrapper">
+
+                <?php if (isset($d->{'title'})): ?>
+                    <h2 class=""><?php echo $d->{'title'}; ?></h2>
+                <?php endif; ?>
+
                 <?php if ($d->type === 'p'): ?>
-                    <h2 class=""><?php echo $d->title; ?></h2>
-                    <p class=""><?php echo $d->text; ?></p>
+                    <?php if (isset($d->{'sub-title'})): ?>
+                        <h3 class=""><?php echo $d->{'sub-title'}; ?></h3>
+                    <?php endif; ?>
+
+                    <?php if (!empty($d->text)): ?>
+                        <p class=""><?php echo $d->text; ?></p>
+                    <?php endif; ?>
                 <?php endif; ?>
 
                 <?php if ($d->type === 'ul'): ?>
-                    <h2 class=""><?php echo $d->title; ?></h2>
+                    <?php if (isset($d->{'sub-title'})): ?>
+                        <h3 class=""><?php echo $d->{'sub-title'}; ?></h3>
+                    <?php endif; ?>
+
                     <ul class="">
                         <?php foreach ($d->text as $li): ?>
                             <li class=""><?php echo $li; ?></li>
                         <?php endforeach; ?>
                     </ul>
                 <?php endif; ?>
-
             </div>
         <?php endforeach; ?>
     <?php endif; ?>
