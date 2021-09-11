@@ -1,6 +1,6 @@
-<div class="project-wrapper">
+<div class="page-info project-wrapper">
     <div class="project-text-info-wrapper">
-        <h1 class="project-name"><?php echo $page_config_data->title; ?></h1>
+        <h1 class="page-title project-name"><?php echo $page_config_data->title; ?></h1>
     </div>
 
     <?php if (!empty($page_config_data->description)): ?>
