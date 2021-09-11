@@ -1,12 +1,13 @@
 <?php
-    require_once('utils/utils.php');
+    require_once 'utils/utils.php';
 
-    require_once('api/renders-data-api.php');
+    require_once 'api/renders-data-api.php';
+    require_once 'api/pages-data-api.php';
 
-    require_once('components/portfolio.php');
-    require_once('components/project.php');
+    require_once 'components/portfolio.php';
+    require_once 'components/project.php';
 
-    require_once('components/data-template-parser.php');
+    require_once 'components/data-template-parser.php';
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +34,6 @@
             <div class="logo-wrapper">
                 <img src="assets/logo_signo3d.jpg" alt="logo de la empresa signo3d sas" title="logo de la empresa signo3d sas">
             </div>
-
 
             <?php require_once('templates/nav.php'); ?>
         </header>

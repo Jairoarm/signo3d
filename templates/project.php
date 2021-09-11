@@ -1,3 +1,7 @@
+<?php
+    $project_info = $page_data['data'];
+?>
+
 <div class="project-wrapper">
     <div class="project-text-info-wrapper">
         <h1 class="project-name"><?php echo $project_info->name; ?></h1>

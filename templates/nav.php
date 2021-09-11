@@ -1,8 +1,18 @@
 <nav class="navbar">
-    <?php if (!$is_index): ?>
-        <a class="nav-link" href="./" target="_self">Portafolio</a>
-    <? endif; ?>
-    <!-- <a class="nav_link" href="02_nosotros.html" target="_self">Nosotros</a> -->
+    <ul>
+        <?php if ($section_type !== 'index'): ?>
+            <li>
+                <a class="nav-link" href="./" target="_self">Portafolio</a>
 
-    <a class="nav-link" href="#contact-info-section" target="_self">Contacto</a>
+            </li>
+        <?php endif; ?>
+
+        <li>
+            <a class="nav-link" href="nosotros" target="_self">Nosotros</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#contact-info-section" target="_self">Contacto</a>
+        </li>
+
+    </ul>
 </nav>

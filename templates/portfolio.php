@@ -1,4 +1,9 @@
 <ul class="renders-portfolio-wrapper">
+    <?php
+        $renders_info = $page_data['data'];
+        $portfolio = $page_data['portfolio'];
+    ?>
+
     <?php for ($ri = 0; $ri < count($renders_info); $ri++): ?>
         <li class="renders-portfolio-image-wrapper">
             <a class="" href="<?php echo str_replace(

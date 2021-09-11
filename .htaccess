@@ -3,4 +3,4 @@ RewriteEngine On
 RewriteRule ^([0-9a-zA-z-]+)$ index.php?project-name=$1&cosa=$1 [NC,L]
 
 # This .* shit does not work, do not know why
-#RewriteRule (.*) index.php?project-name=$1&cosa=$1 [NC,L]
+# RewriteRule (.*) index.php?project-name=$1&cosa=$1 [NC,L]

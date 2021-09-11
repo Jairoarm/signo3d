@@ -1,26 +1,82 @@
 <?php
-    $renders_api = new RendersDataApi();
-    $renders_data = $renders_api->get_all_renders_data();
+    function get_portfolio_renders_info() {
+        $renders_api = new RendersDataApi();
+        $renders_data = $renders_api->get_all_renders_data();
 
-    $project_name = isset($_GET['project-name']) ? $_GET['project-name'] : null;
+        $portfolio = new Portfolio($renders_data);
 
-    $template = 'portfolio.php';
-    $project_info = null;
+        return [
+            "data" => $portfolio->get_renders_info(),
+            "portfolio" => $portfolio,
+            "template" => "portfolio.php"
+        ];
+    }
 
-    if ($project_name) {
+    function get_project_data($project_name) {
+        $renders_api = new RendersDataApi();
+        $renders_data = $renders_api->get_all_renders_data();
+
         $project = new Project($renders_data);
         $project_info = $project->get_project_info($project_name);
 
-        if ($project_info) {
-            $template = 'project.php';
+        return [
+            "data" => $project_info,
+            "template" => "project.php"
+        ];
+    }
+
+    function get_page_config_info($page_name) {
+        $page_api = new PageDataApi();
+
+        return $page_api->get_page_data($page_name);
+    }
+
+    function get_section_data() {
+        return [
+            "template" => "section.php"
+        ];
+    }
+
+    function get_section_type($resource) {
+        $sections = [
+            'nosotros'
+        ];
+
+        if ($resource == null) {
+            return 'index';
         }
+
+        if (in_array($resource, $sections)) {
+            return 'section';
+        }
+
+        return 'project';
     }
 
-    $is_index = !$project_name || !$project_info;
+    function get_page_name($resource) {
+        $sections_map = [
+            'nosotros' => 'us'
+        ];
 
-    if ($is_index) {
-        $portfolio = new Portfolio($renders_data);
-        $renders_info = $portfolio->get_renders_info();
+        if ($resource == null) {
+            return 'inicio';
+        }
+
+        return $sections_map[$resource] ?? '';
     }
+
+    $page_data_map = [
+        "index" => "get_portfolio_renders_info",
+        "section" => "get_section_data",
+        "project" => "get_project_data"
+    ];
+
+    $page = $_GET['project-name'] ?? null;
+    $section_type = get_section_type($page);
+    $page_data = $page_data_map[$section_type]($page);
+
+    $template = $page_data['template'];
+
+    $page_config_data = get_page_config_info(get_page_name($page));
 
 ?>
