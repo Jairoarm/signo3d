@@ -16,6 +16,11 @@
                     return $data;
                 }
             }
+
+            return (object) [
+                'head-description' => '',
+                'head-keywords' => '',
+            ];
         }
     }
 ?>

@@ -16,6 +16,9 @@
         <meta charset="utf-8">
         <title>signo3d</title>
         <meta name="viewport" content="width=device-width , initial-scale=1 , user-scalable=no"/>
+        <meta name="description" content="<?php echo $page_config_data->{'head-description'}; ?>">
+        <meta name="keywords" content="<?php echo $page_config_data->{'head-keywords'}; ?>">
+        <meta name="author" content="andimier.com">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/portfolio.css">
         <link rel="stylesheet" href="css/project.css">
