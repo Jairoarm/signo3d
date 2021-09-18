@@ -22,6 +22,7 @@ ul {
 
 header {
     padding: 60px 0;
+    position: relative;
 }
 
 nav {
@@ -62,6 +63,20 @@ button {
 
 button:hover {
     background-color: #eee;
+}
+
+.whatsapp-link-container {
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    width: 70px;
+}
+.whatsapp-link-container.footer-link {
+    position: initial;
+}
+
+.whatsapp-link-container img {
+    width: 100%;
 }
 
 .logo-wrapper {
