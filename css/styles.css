@@ -71,6 +71,11 @@ button:hover {
     right: 5px;
     width: 50px;
 }
+
+.whatsapp-link-container:hover {
+    opacity: .5;
+}
+
 .whatsapp-link-container.footer-link {
     position: initial;
 }
