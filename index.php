@@ -19,6 +19,7 @@
         <meta name="description" content="<?php echo $page_config_data->{'head-description'}; ?>">
         <meta name="keywords" content="<?php echo $page_config_data->{'head-keywords'}; ?>">
         <meta name="author" content="andimier.com">
+        <link rel="shorcut icon" href="assets/icon.png" type="image/x-icon">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/portfolio.css">
         <link rel="stylesheet" href="css/project.css">
