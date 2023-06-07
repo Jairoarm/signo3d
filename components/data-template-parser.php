@@ -65,18 +65,23 @@
         return $sections_map[$resource] ?? '';
     }
 
-    $page_data_map = [
-        "index" => "get_portfolio_renders_info",
-        "section" => "get_section_data",
-        "project" => "get_project_data"
-    ];
+    try {
 
-    $page = $_GET['project-name'] ?? null;
-    $section_type = get_section_type($page);
-    $page_data = $page_data_map[$section_type]($page);
+        $page_data_map = [
+            "index" => "get_portfolio_renders_info",
+            "section" => "get_section_data",
+            "project" => "get_project_data"
+        ];
 
-    $template = $page_data['template'];
+        $page = $_GET['project-name'] ?? null;
+        $section_type = get_section_type($page);
+        $page_data = $page_data_map[$section_type]($page);
 
-    $page_config_data = get_page_config_info(get_page_name($page));
+        $template = $page_data['template'];
+
+        $page_config_data = get_page_config_info(get_page_name($page));
+    } catch (Exception $e) {
+        echo 'Caught exception: ',  $e->getMessage(), "\n";
+    }
 
 ?>
